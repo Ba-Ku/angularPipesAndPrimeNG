@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ArticlePipePipe } from './article-pipe.pipe';
+import {TabViewModule} from "primeng/tabview";
+import {TableModule} from "primeng/table";
+import {ChartModule} from "primeng/chart";
 
 @NgModule({
   declarations: [
@@ -10,7 +13,10 @@ import { ArticlePipePipe } from './article-pipe.pipe';
     ArticlePipePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TabViewModule,
+    TableModule,
+    ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
